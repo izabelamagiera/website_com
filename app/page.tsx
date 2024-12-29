@@ -7,7 +7,9 @@ export default function Home() {
 			<div className={s.pageContent}>
 				<AnimateLogo />
 				<h1>izabela magiera</h1>
-				<p>this is work in progress.</p>
+				<p>
+					<span className={s.bold}>status</span> work_in_progress
+				</p>
 			</div>
 		</div>
 	);
