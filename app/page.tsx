@@ -7,7 +7,7 @@ export default function Home() {
 			<div className={s.pageContent}>
 				<Image src="/stampSun.svg" alt="logo" width={80} height={80} />
 				<h1>izabela magiera</h1>
-				<p>this website is work in progress.</p>
+				<p>this website is work in progress</p>
 			</div>
 		</div>
 	);
