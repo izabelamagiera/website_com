@@ -12,7 +12,7 @@ const draw = {
 				pathLength: {
 					delay,
 					type: 'tween',
-					duration: 0.75,
+					duration: 0.4,
 					bounce: 0,
 					ease: 'linear',
 				},
@@ -39,7 +39,7 @@ const AnimateLogo = () => {
 				animate={{ rotate: -360, opacity: 0.8, scale: 1 }}
 				transition={{
 					rotate: {
-						delay: 2,
+						delay: 1.8,
 						duration: 12,
 						repeat: Infinity,
 						ease: 'linear',
