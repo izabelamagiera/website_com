@@ -4,6 +4,7 @@
 	align-items: center;
 	width: 100%;
 	height: 100vh;
+	height: 100svh;
 	padding: 1rem;
 	background-color: #ffd40055;
 }
