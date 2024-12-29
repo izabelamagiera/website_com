@@ -1,6 +1,5 @@
 'use client';
 import { motion } from 'motion/react';
-import { useState } from 'react';
 
 const draw = {
 	hidden: { pathLength: 0, opacity: 0 },
