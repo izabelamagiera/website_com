@@ -8,7 +8,7 @@ export default function Home() {
 				<AnimateLogo />
 				<h1>izabela magiera</h1>
 				<p>
-					<span className={s.bold}>status</span> work_in_progress
+					<span className={s.bold}>status</span> work_in_progress.
 				</p>
 			</div>
 		</div>
