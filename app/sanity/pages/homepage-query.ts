@@ -1,4 +1,3 @@
-import { cache } from 'react';
 import { clientFetch } from '../client';
 
 export async function getHomepage() {
