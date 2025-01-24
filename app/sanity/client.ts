@@ -1,11 +1,11 @@
 import { createClient, type QueryParams } from 'next-sanity';
 
-const env = process.env.NODE_ENV || '{{ENV}}';
 const DEFAULT_PARAMS = {} as QueryParams;
 const DEFAULT_TAGS = [] as string[];
 const client = createClient({
 	projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
-	dataset: env === 'production' ? 'production' : 'stage',
+	dataset:
+		process.env.NEXT_PUBLIC_SANITY_DATASET === 'stage' ? 'stage' : 'production',
 	useCdn: true,
 	apiVersion: '2025-01-24',
 	token: process.env.NEXT_PUBLIC_SANITY_TOKEN_ID,
