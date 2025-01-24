@@ -1,9 +1,9 @@
 import s from './page.module.css';
 import AnimateLogo from './components/AnimateLogo';
-import { getHomepage } from './sanity/pages/homepage-query';
+import { getHome } from './sanity/pages/homepage-query';
 
 export default async function Home() {
-	const page = await getHomepage();
+	const page = await getHome();
 	console.log(page, 'check query');
 	return (
 		<div className={s.pageWrap}>
