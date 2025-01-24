@@ -6,9 +6,7 @@ export async function getHomepage() {
         *[_type == "homepage"][0] {
         _id,
             title,
-    
-        }`,
-		{},
-		['homepage']
+			description
+        }`
 	);
 }
