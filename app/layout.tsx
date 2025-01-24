@@ -1,17 +1,6 @@
 import type { Metadata } from 'next';
-import { Poppins, Bodoni_Moda } from 'next/font/google';
+import { poppins, bodoni } from './utils/fonts/googleFonts';
 import './globals.css';
-
-const poppins = Poppins({
-	weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-	variable: '--font-poppins-sans',
-	subsets: ['latin'],
-});
-const bodoni = Bodoni_Moda({
-	weight: ['400', '500', '600', '700', '800', '900'],
-	variable: '--font-bodoni-serif',
-	subsets: ['latin'],
-});
 
 export const metadata: Metadata = {
 	title: 'Izabela Magiera',
