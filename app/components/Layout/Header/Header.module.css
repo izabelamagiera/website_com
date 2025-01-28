@@ -1,0 +1,15 @@
+.sectionHeader {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 2rem;
+}
+.headerH2 {
+	font-family: var(--font-nunito);
+	font-weight: 300;
+	letter-spacing: 0.15rem;
+	font-size: 1.6rem;
+	color: var(--foreground);
+	padding: 1rem 0;
+}

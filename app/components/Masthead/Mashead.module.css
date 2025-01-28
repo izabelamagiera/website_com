@@ -1,0 +1,8 @@
+.container {
+	width: 100%;
+	padding-right: 7rem;
+}
+.innerContainer {
+	background-color: var(--background);
+	border-bottom-right-radius: 2rem;
+}

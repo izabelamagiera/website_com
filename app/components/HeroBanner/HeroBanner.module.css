@@ -1,0 +1,50 @@
+.section {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	background-color: var(--color-medium);
+	padding: 6rem 2rem;
+	box-shadow: 3px 3px 18px 1px hsla(223, 72%, 73%, 0.05);
+}
+.heroContentWrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 50rem;
+	z-index: 1;
+	width: auto;
+}
+.heroHeadline {
+	text-align: center;
+	font-family: var(--font-mono);
+	font-weight: 400;
+	line-height: 2.6rem;
+	font-size: 1.8rem;
+	margin-bottom: 2rem;
+}
+.heroLogosWrap {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 3.2rem;
+	width: auto;
+}
+.heroLogoItem {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	margin-right: 2.4rem;
+}
+@media (max-width: 900px) {
+	.heroLogoItem {
+		margin-right: 1.25rem;
+	}
+}

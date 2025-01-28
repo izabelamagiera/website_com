@@ -1,0 +1,19 @@
+.footerFlexContainer {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 7rem;
+}
+.footerItems {
+	display: flex;
+	flex-direction: row;
+}
+.footerFlexItem {
+	width: auto;
+	margin: 0 1rem;
+	display: flex;
+	color: var(--color-accent);
+}
