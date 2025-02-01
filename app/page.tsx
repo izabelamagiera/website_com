@@ -1,20 +1,23 @@
-import s from './page.module.css';
-import AnimateLogo from './components/AnimateLogo';
 import { getHome } from './sanity/pages/homepage-query';
+import { Metadata } from 'next';
+import Header from './components/Header/Header';
+import { Container, Wrapper } from './styles';
+import About from './components/sections/About/About';
+import PageSection from './components/sections/Section/Section';
 
+const page = await getHome();
+export const metadata: Metadata = {
+	title: page.title ? `${page.title}` : 'Izabela Magiera | Web developer',
+	description: page.description ? `${page.title}` : 'Description',
+};
 export default async function Home() {
-	const page = await getHome();
-	console.log(page, 'check query');
 	return (
-		<div className={s.pageWrap}>
-			<div className={s.pageContent}>
-				<AnimateLogo />
-				<h1>izabela magiera</h1>
-				<p>
-					<span className={s.bold}>status</span>: work_in_progress
-				</p>
-				<p>{page && page.title}</p>
-			</div>
-		</div>
+		<Wrapper>
+			<Container>
+				<Header links={page.links} />
+				<About about={page.about} reviews={page.reviews} />
+				<PageSection />
+			</Container>
+		</Wrapper>
 	);
 }
