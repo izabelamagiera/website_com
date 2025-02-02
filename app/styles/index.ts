@@ -1,4 +1,8 @@
 import {
+	ProjectImage,
+	StyledProjectCard,
+} from '../components/Portfolio/Projects.styled';
+import {
 	Container,
 	FlexCol,
 	FlexRow,
@@ -18,6 +22,10 @@ export {
 	FlexCol,
 	FlexRow,
 	Grid,
+
+	// Components
+	StyledProjectCard,
+	ProjectImage,
 
 	// Text & fonts
 	StyledLink,

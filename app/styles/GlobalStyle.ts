@@ -24,27 +24,13 @@ ${variables};
         overflow-x: hidden;
         color: var(--foreground);
         background: var(--background);
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: var(--font-inter-sans), sans-serif;
     }
     a {
 		position: relative;
         color: inherit;
+        font-size: inherit;
         text-decoration: none;
-
-		&::after {
-			content: '';
-			position: absolute;
-			bottom: -0.2rem;
-			left: 0;
-			height: 0.2rem;
-			width: 100%;
-			background-color: var(--color-accent);
-			transition: all 0.3s;
-			z-index: -1;
-		}
-		&:hover::after {
-			height: calc(100% + 0.4rem);
-		}
 	}
 `;
 
