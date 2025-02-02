@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { ReviewProps } from '@/app/types/components/ReviewType';
 import { StyledReview } from './StyledReview.styled';
-
-import { PortableText, PortableTextComponents } from '@portabletext/react';
 import { StyledLink } from '@/app/styles/utils/Typography';
+import { PortableText, PortableTextComponents } from '@portabletext/react';
 
 export default function ReviewItem({ body }: ReviewProps) {
 	const [siteUrl, setSiteUrl] = useState('');
