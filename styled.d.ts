@@ -3,12 +3,17 @@ import 'styled-components';
 
 // and extend them!
 declare module 'styled-components' {
-	export interface DefaultTheme {
-		borderRadius: string;
-
-		colors: {
-			main: string;
-			secondary: string;
-		};
-	}
+  export interface ThemeType {
+    colors: {
+      body: string;
+      text: string;
+      accent: string;
+      textAccent: string;
+      background: string;
+      foreground: string;
+    };
+    icons: {
+      content: string;
+    };
+  }
 }
