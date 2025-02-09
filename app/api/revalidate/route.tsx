@@ -3,35 +3,35 @@ import { type NextRequest, NextResponse } from 'next/server';
 import { parseBody } from 'next-sanity/webhook';
 
 export async function POST(req: NextRequest) {
-	try {
-		const { body, isValidSignature } = await parseBody<{
-			_type: string;
-			slug?: string | undefined;
-		}>(req, process.env.NEXT_PUBLIC_SANITY_HOOK_SECRET);
+  try {
+    const { body, isValidSignature } = await parseBody<{
+      _type: string;
+      slug?: string | undefined;
+    }>(req, process.env.NEXT_PUBLIC_SANITY_HOOK_SECRET, true);
 
-		if (!isValidSignature) {
-			const message = 'Invaid signature';
-			return new Response(JSON.stringify({ body, isValidSignature, message }), {
-				status: 401,
-			});
-		}
+    if (!isValidSignature) {
+      const message = 'Invalid signature';
+      return new Response(JSON.stringify({ body, isValidSignature, message }), {
+        status: 401
+      });
+    }
 
-		if (!body?._type) {
-			return new Response(JSON.stringify({ body }), { status: 400 });
-		}
+    if (!body?._type) {
+      return new Response(JSON.stringify({ body }), { status: 400 });
+    }
 
-		revalidateTag('sanityQuery');
-		return NextResponse.json({
-			status: 200,
-			revalidated: true,
-			now: Date.now(),
-			body,
-		});
-	} catch (error: unknown) {
-		console.error(error);
-		if (error instanceof Error) {
-			return new Response(error.message, { status: 500 });
-		}
-		return new Response('Error', { status: 500 });
-	}
+    revalidateTag('sanityQuery');
+    return NextResponse.json({
+      status: 200,
+      revalidated: true,
+      now: Date.now(),
+      body
+    });
+  } catch (error: unknown) {
+    console.error(error);
+    if (error instanceof Error) {
+      return new Response(error.message, { status: 500 });
+    }
+    return new Response('Error', { status: 500 });
+  }
 }

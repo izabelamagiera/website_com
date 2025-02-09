@@ -1,12 +1,7 @@
-import { Poppins, Bodoni_Moda } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
-export const poppins = Poppins({
+export const inter = Inter({
 	weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-	variable: '--font-poppins-sans',
-	subsets: ['latin'],
-});
-export const bodoni = Bodoni_Moda({
-	weight: ['400', '500', '600', '700', '800', '900'],
-	variable: '--font-bodoni-serif',
+	variable: '--font-inter-sans',
 	subsets: ['latin'],
 });
