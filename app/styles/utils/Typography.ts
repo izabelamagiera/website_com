@@ -1,5 +1,5 @@
 'use client';
-import styled, { useTheme } from 'styled-components';
+import styled from 'styled-components';
 
 const StyledLink = styled.a`
   position: relative;

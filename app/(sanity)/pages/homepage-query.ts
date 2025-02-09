@@ -43,6 +43,7 @@ export async function getHome(): Promise<HomepageProps> {
           title,
           description[],
           image ${asset},
+          darkModeImage ${asset},
           url,
           tags[]-> ${tag},
         },

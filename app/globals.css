@@ -6,7 +6,7 @@
   margin: 0;
 }
 :root {
-  --color-dark: hsl(0, 0%, 18%);
+  --color-dark: rgb(46, 46, 46);
   --color-light: hsl(34, 19%, 93%);
   --color-accent: hsl(37, 12%, 74%);
   --background: var(--color-light);
