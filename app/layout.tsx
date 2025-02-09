@@ -1,9 +1,11 @@
 'use client';
 
 import { inter } from './utils/fonts/googleFonts';
+import { Suspense } from 'react';
+import Loading from './components/utils/Loading/Loading';
 import StyledComponentsRegistry from './registry';
-import GlobalStyle from './styles/GlobalStyle';
 import { ColorThemeProvider } from './context/ColorContext/ColorThemeContext';
+import GlobalStyle from './styles/GlobalStyle';
 
 export default function RootLayout({
   children

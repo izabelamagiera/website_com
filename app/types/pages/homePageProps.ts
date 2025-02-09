@@ -5,11 +5,12 @@ import { ExperienceProps } from '../components/ExperienceType';
 import { PortfolioProps } from '../components/PortfolioTypes';
 
 export interface HomepageProps {
-	title: string;
-	description: string;
-	links: LinkProps[];
-	reviews: ReviewProps[];
-	about: PortableTextBlock[];
-	experience: ExperienceProps;
-	portfolio: PortfolioProps;
+  _id: string;
+  title: string;
+  description: string;
+  links: LinkProps[];
+  reviews: ReviewProps[];
+  about: PortableTextBlock[];
+  experience: ExperienceProps;
+  portfolio: PortfolioProps;
 }

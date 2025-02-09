@@ -4,9 +4,8 @@ import { asset } from '../fragments/asset';
 import { tag } from '../fragments/tag';
 
 export async function getHome(): Promise<HomepageProps> {
-	return clientFetch(
-		`
-        *[_type == "home"][0] {
+  return clientFetch(
+    `*[_type == 'home'][0] {
 			_id,
 			title,
 			description,
@@ -50,7 +49,7 @@ export async function getHome(): Promise<HomepageProps> {
           
       }
 		}`,
-		{},
-		['home']
-	);
+    {},
+    ['home']
+  );
 }
