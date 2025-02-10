@@ -49,6 +49,9 @@ const StyledRichText = styled.div`
     margin-bottom: 1.6rem;
     margin-top: 0.4rem;
   }
+  ${StyledLink} {
+    margin-right: 0;
+  }
 `;
 const HeaderLg = styled.h2`
   display: flex;
