@@ -15,6 +15,12 @@ changelog:
       labels:
         - Semver-Minor
         - enhancement
+    - title: 🐛 Bug
+      labels:
+        - bug
+    - title: ♻ Refactoring
+      labels:
+        - refactor
     - title: Other Changes
       labels:
         - "*"
